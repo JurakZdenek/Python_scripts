@@ -1,0 +1,22 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=utf-8:Harry Potter
+N;CHARSET=utf-8:;Potter;Harry;;
+TITLE;CHARSET=utf-8:
+ORG;CHARSET=utf-8:Company
+EMAIL;CHARSET=utf-8;TYPE=internet,pref:
+TEL;CHARSET=utf-8;TYPE=cell,voice:111111111
+TEL;CHARSET=utf-8;TYPE=work,voice:
+ADR;WORK;PREF;CHARSET=utf-8:;;;Ostrava
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=utf-8:Drago Malfoy
+N;CHARSET=utf-8:Malfoy;Drago;;;
+TITLE;CHARSET=utf-8:Master of spells
+ORG;CHARSET=utf-8:Company
+EMAIL;CHARSET=utf-8;TYPE=internet,pref:drago@malfoy.cz
+TEL;CHARSET=utf-8;TYPE=cell,voice:222222222
+TEL;CHARSET=utf-8;TYPE=work,voice:333333333
+ADR;WORK;PREF;CHARSET=utf-8:;;;Tábor - Sezimovo Ústí
+END:VCARD
