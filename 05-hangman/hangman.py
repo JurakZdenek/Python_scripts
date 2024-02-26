@@ -1,4 +1,4 @@
-# Hra Hangman neboli oběšenec
+# Hra Hangman neboli šibenice
 import random
 
 obrazky = ['''
