@@ -91,8 +91,7 @@ slova = [
     ["police", "jsou na tom knihy"],
     ["lampa", "svití to"],
     ["okno", "veliké a nechceš to mýt"],
-    ["stul", "pokládáme na to věci"],
-    ["k", "je to kurva na 1"]
+    ["stul", "pokládáme na to věci"]
 ]
 
 pokusy = 0
