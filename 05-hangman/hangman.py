@@ -91,7 +91,8 @@ slova = [
     ["police", "jsou na tom knihy"],
     ["lampa", "svití to"],
     ["okno", "veliké a nechceš to mýt"],
-    ["stul", "pokládáme na to věci"]
+    ["stul", "pokládáme na to věci"],
+    ["k", "je to kurva na 1"]
 ]
 
 pokusy = 0
@@ -102,8 +103,15 @@ vybrany_list = list(vybrane_slovo)
 delka_slova = len(vybrany_list)
 pracovni_list = []
 
+pismeno_sklonovane = "písmen"
+
+if delka_slova == 1:
+    pismeno_sklonovane = "písmeno"
+elif delka_slova <= 4:
+    pismeno_sklonovane = "písmena"
+
 print("")
-print(f"Nápověda k hledanému slovu zní: {napoveda}")
+print(f"Hledané slovo je na {delka_slova} {pismeno_sklonovane} a nápověda k němu zní: {napoveda}")
 print("")
 
 #naplneni listu "_"
@@ -111,16 +119,17 @@ for i in range(delka_slova):
     pracovni_list.append("_")
 
 while vybrany_list != pracovni_list:
-    zadane_pismeno = input("Zadej písmeno:\n").lower()
     pracovni_slovo = ""
+    for i in pracovni_list:
+            pracovni_slovo += f"{i} "
+    print(pracovni_slovo.upper())
+    zadane_pismeno = input("Zadej písmeno:\n").lower()
     #vymena "_" za nalezene pismeno
     if zadane_pismeno in vybrany_list:
         for i in range(delka_slova):
             if vybrany_list[i] == zadane_pismeno:
                 pracovni_list[i] = zadane_pismeno
-        for i in pracovni_list:
-            pracovni_slovo += i
-        print(pracovni_slovo.upper())
+        
     else:
         print(obrazky[pokusy])
         pokusy += 1
