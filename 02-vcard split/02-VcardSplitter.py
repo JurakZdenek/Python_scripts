@@ -2,7 +2,7 @@ import re
 import os
 
 #open and read source multiple VCARD file
-sourcefile = open("kontakty.vcf", "r")
+sourcefile = open(".\\kontakty.vcf", "r", encoding="utf8")
 source = sourcefile.read()
 sourcefile.close
 
@@ -29,6 +29,6 @@ for i in range(length):
         cardname = cardname.replace(" ", "-", 1)
         cardname = cardname.replace(" ", "")
 
-        file = open(f"{folder}/{number}-{cardname}.vcf", "w")
+        file = open(f"{folder}/{number}-{cardname}.vcf", "w", encoding="utf8")
         file.write(vcards[i])
         file.close()            
